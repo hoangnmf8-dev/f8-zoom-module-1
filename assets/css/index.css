@@ -889,13 +889,11 @@
 
   .intro .media-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .intro .intro-media {
-    width: 70%;
-    height: auto;
-    margin-top: 80px;
+    height: 100%;
   }
 
   .intro .intro-info .intro-info-title {
@@ -927,10 +925,22 @@
     left: 40px;
     right: 40px;
   }
-  
 }
 
 @media screen and (max-width: 991.98px) {
+  /* Intro */
+  .intro-info {
+    margin-bottom: 76px;
+  }
+
+  .intro .media-wrapper {
+    justify-content: center;
+  }
+
+  .intro .intro-media {
+    width: 70%;
+  }
+
   /* About */
   .about .info-wrapper {
     padding-inline: 50px;
@@ -1282,7 +1292,8 @@
   .cta {
     padding: 40px 50px;
   }
-  .cta-tag, .cta-desc {
+  .cta-tag,
+  .cta-desc {
     font-size: 1rem;
     line-height: 17px;
   }
