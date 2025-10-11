@@ -1,0 +1,211 @@
+.header {
+  height: 127px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--Yellow-light);
+  z-index: var(--z-index-header);
+}
+
+.header .grid.wide {
+  height: 100%;
+}
+
+.header .row {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .menu-bar {
+  display: none;
+}
+
+.header .header-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--Overlay);
+  display: none;
+  z-index: 1000;
+}
+
+.header .logo {
+  margin-right: 239px;
+}
+
+.header .logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 3.1rem;
+  aspect-ratio: 1 /1;
+  object-fit: cover;
+  margin-bottom: 3px;
+}
+
+.header .logo .logo-pretitle {
+  color: var(--Dark);
+  font-size: 2.4rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 3px;
+}
+
+.header .logo .logo-title {
+  color: var(--Dark);
+  font-size: 1.4rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.header-nav {
+  z-index: 1100;
+}
+
+.header-nav-close {
+  display: none;
+}
+
+.header-nav .header-nav-list {
+  display: flex;
+  font-family: "Manrope";
+}
+
+.header-nav .header-nav-list .header-nav-list-item {
+  position: relative;
+  margin-right: 50px;
+  color: var(--Dark);
+  font-size: 1.6rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.header-nav .header-nav-list .header-nav-list-item i {
+  position: absolute;
+  top: 50%;
+  translate: 10% -25%;
+  font-size: 1rem;
+}
+
+.header-nav .header-nav-list .header-nav-list-item:hover * {
+  color: var(--Orange);
+  /* font-weight: 600; */
+}
+
+.header-nav .header-nav-list .header-nav-list-item:hover i {
+  rotate: 180deg;
+}
+
+.header-tel {
+  display: flex;
+  align-items: center;
+}
+
+.header-tel span {
+  color: var(--Dark);
+  font-size: 1.6rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.header-tel a {
+  color: var(--Dark);
+  font-size: 2.2rem;
+  font-family: "Manrope";
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .header .logo {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .header .header-tel {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header .menu-bar {
+    display: block;
+    font-size: 2.2rem;
+  }
+
+  #header-checkbox:checked ~ .header-overlay {
+    display: block;
+  }
+
+  .header .header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    padding: 30px 35px;
+    background-color: var(--White);
+    translate: -100%;
+    transition: translate 0.3s ease;
+  }
+
+  .header .header-nav .header-nav-close {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 2px 10px;
+    background-color: var(--Dark);
+    color: var(--White);
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .header .header-nav .header-nav-list-item {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3dfdf;
+  }
+
+  .header .header-nav .header-nav-list-item span {
+    font-size: 2rem;
+  }
+
+  #header-checkbox:checked ~ .header-nav {
+    translate: 0;
+  }
+
+  .header .header-nav .header-nav-list {
+    flex-direction: column;
+  }
+
+  .header-tel span {
+    font-size: 1.4rem;
+  }
+
+  .header-tel a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .header {
+    padding: 20px;
+    height: 100px;
+  }
+
+  .header .header-overlay {
+    display: none;
+  }
+
+  .header .header-nav {
+    width: 100%;
+  }
+}

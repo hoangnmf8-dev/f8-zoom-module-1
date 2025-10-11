@@ -1,0 +1,78 @@
+:root {
+  --Yellow-light: #f8ebc9;
+  --Yellow: #fed464;
+  --White: #fff;
+  --Orange: #fd6038;
+  --Green: #017848;
+  --Dark: #0e1412;
+  --Overlay: #7a797974;
+  --Gray-light: #beccc7;
+  --Gray: #586863;
+  --header-height-large: 127px;
+  --header-height-small: 100px;
+  --z-index-header: 1500;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Roboto-Slab/RobotoSlab-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  word-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: var(--Orange);
+  padding: 15px 35px;
+  color: var(--White);
+  font-size: 1.8rem;
+  font-family: Manrope;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+  max-height: 60px;
+}
+
+.btn:hover {
+  background-color: #fd3402;
+}
+
+img {
+  display: block;
+}
+
+
+
+

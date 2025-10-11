@@ -1,0 +1,277 @@
+.practice {
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+  top: var(--header-height-large);
+}
+
+.tag,
+.desc {
+  color: var(--Gray);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.tag {
+  margin-bottom: 6px;
+}
+
+.title {
+  color: var(--Dark);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.title {
+  margin-bottom: 18px;
+}
+
+/* Intro */
+.intro {
+  background-color: var(--Yellow-light);
+  text-align: center;
+  padding-block: 40px 100px;
+}
+
+.intro .grid.wide {
+  max-width: 670px;
+}
+
+.intro-tag,
+.intro-desc {
+  color: var(--Dark);
+}
+
+.intro-tag {
+  margin-bottom: 12px;
+}
+
+.intro-title {
+  font-size: 6rem;
+  line-height: 1.167;
+  margin-bottom: 18px;
+}
+
+/* Service */
+.service {
+  background-color: var(--White);
+  padding: 150px 0;
+  text-align: center;
+}
+
+.service .service-tag {
+  color: var(--Gray);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.service .service-title {
+  color: var(--Dark);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+.service .service-desc {
+  color: var(--Gray);
+  font-size: 1.8rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+.service .row {
+  margin-inline: -15px;
+}
+
+.service .row .col {
+  padding: 15px;
+}
+
+.service .row .service-item {
+  position: relative;
+}
+
+.service .row .service-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.service .service-item .service-item-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  word-wrap: normal;
+  background-color: var(--White);
+  color: var(--Dark);
+}
+
+.service .service-item .service-item-btn:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+/* CTA */
+.cta {
+  background-color: var(--Green);
+  padding-block: 100px;
+  text-align: center;
+}
+
+.cta-tag,
+.cta-desc {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.cta-title {
+  color: var(--White);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+.cta-desc {
+  margin-bottom: 38px;
+  font-family: "Manrope";
+}
+
+.cta-btn {
+  display: block;
+  margin: 0 auto;
+  width: 242px;
+}
+
+@media (min-width: 1200px) {
+  .cta .grid.wide {
+    max-width: 470px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+   /* Intro */
+  .intro {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .tag,
+  .desc {
+    font-size: 1.4rem;
+  }
+
+  /* Service */
+  .service {
+    padding-block: 100px;
+  }
+
+  .service .service-item .service-item-btn {
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+
+}
+@media screen and (max-width: 575.98px) {
+  .main{
+    top: var(--header-height-small);
+  }
+
+  .tag,
+  .desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 37px;
+    margin-bottom: 12.96px;
+  }
+
+   /* Intro */
+  .intro {
+    padding: 0 20px 40px;
+  }
+
+  /* Service */
+  .service {
+    padding: 50px 20px;
+  }
+
+  .service .service-tag {
+    margin-bottom: 5px;
+  }
+
+  .service .service-desc {
+    margin-bottom: 40px;
+  }
+
+  .service .service-tag,
+  .service .service-desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .service .service-title {
+    font-size: 3rem;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+
+  .service .service-item .service-item-btn {
+    font-size: 1.9rem;
+    line-height: 28.97px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 40px 50px;
+  }
+  .cta-tag, .cta-desc {
+    font-size: 1rem;
+    line-height: 17px;
+  }
+
+  .cta-title {
+    font-size: 2.4rem;
+    line-height: 30px;
+  }
+
+  .cta-desc {
+    margin-bottom: 24.43px;
+  }
+
+  .cta-btn {
+    font-size: 10.58px;
+    line-height: 17.63px;
+    width: 142.2px;
+    padding: 8.82px 20.6px;
+  }
+}

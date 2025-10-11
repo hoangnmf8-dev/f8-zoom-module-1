@@ -1,0 +1,554 @@
+.about {
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+  top: 127px;
+}
+
+.tag,
+.desc {
+  color: var(--Gray);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.tag {
+  margin-bottom: 6px;
+}
+
+.title {
+  color: var(--Dark);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.title {
+  margin-bottom: 18px;
+}
+
+/* Intro */
+.intro {
+  background-color: var(--Yellow-light);
+  text-align: center;
+  padding-block: 40px 100px;
+}
+
+.intro .grid.wide {
+  max-width: 670px;
+}
+
+.intro-tag,
+.intro-desc {
+  color: var(--Dark);
+}
+
+.intro-tag {
+  margin-bottom: 12px;
+}
+
+.intro-title {
+  font-size: 6rem;
+  line-height: 1.167;
+  margin-bottom: 18px;
+}
+
+/* Story */
+.story {
+  padding-top: 150px;
+  background: var(--White);
+}
+
+.story .info-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 130px;
+}
+
+.story-info-desc {
+  margin-bottom: 30px;
+}
+
+.story .col.img-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.story-img {
+  position: relative;
+}
+
+.story-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 3%;
+  height: 40%;
+  background-color: var(--Yellow);
+  z-index: 10;
+}
+
+.story-img img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+/* Gallery */
+.gallery {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.gallery-desc {
+  margin-bottom: 70px;
+}
+
+.gallery-img {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.gallery-dot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.gallery-statistical {
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-block: 50px;
+}
+
+.gallery-statistical-item-number {
+  color: var(--Dark);
+  font-size: 6rem;
+  font-family: "Roboto Slab";
+  font-weight: 800;
+  line-height: 70px;
+}
+
+.gallery-statistical-item-desc {
+  color: var(--Dark);
+  font-size: 1.8rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Video */
+.video {
+  padding-block: 150px;
+  background-color: var(--White);
+}
+
+.video-info {
+  text-align: center;
+}
+
+.video-desc {
+  margin-bottom: 70px;
+}
+
+
+.video .video-wrapper {
+  position: relative;
+}
+
+.video .video-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: scale .1s ease;
+}
+
+.video .video-wrapper img:active {
+  scale: .8;
+}
+
+.video .video-wrapper video {
+  width: 100%;
+}
+
+/* Team */
+.team {
+  background-color: var(--Dark);
+  text-align: center;
+  padding-block: 100px;
+}
+
+.team .team-tag {
+  color: var(--Orange);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.team .team-title {
+  color: var(--White);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+.team .team-desc {
+  color: var(--Gray-light);
+  font-size: 1.8rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+.team .team-lawyers .row {
+  margin-inline: -15px;
+}
+
+.team .team-lawyers .row .col {
+  padding: 15px;
+}
+
+.team .team-lawyers .team-lawyers-item .team-lawyers-item-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.team
+  .team-lawyers
+  .team-lawyers-item
+  .team-lawyers-item-img:hover
+  .team-lawyers-item-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team .team-lawyers .team-lawyers-item .team-lawyers-item-img img {
+  transition: all 0.3s ease;
+}
+
+.team .team-lawyers .team-lawyers-item .team-lawyers-item-img:hover img {
+  scale: 1.1;
+}
+
+.team .team-lawyers .team-lawyers-item-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+  left: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.team .team-lawyers img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.team .team-lawyers .team-lawyers-item-name {
+  color: var(--White);
+  font-size: 2.2rem;
+  font-family: "Manrope";
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.team .team-lawyers .team-lawyers-item-position {
+  color: var(--Gray-light);
+  font-size: 1.6rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Awards */
+.awards {
+  padding-block: 100px;
+  background-color: var(--Yellow-light);
+  text-align: center;
+}
+
+.awards .awards-tag {
+  color: var(--Dark);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.awards .awards-title {
+  color: var(--Dark);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 70px;
+}
+
+.awards .row {
+  margin-inline: -15px;
+}
+
+.awards .row .col {
+  padding: 15px;
+}
+
+.awards-item {
+  background-color: var(--White);
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awards .awards-item img {
+  width: 40%;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--Green);
+  padding-block: 100px;
+  text-align: center;
+}
+
+.cta-tag,
+.cta-desc {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.cta-title {
+  color: var(--White);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+.cta-desc {
+  margin-bottom: 38px;
+  font-family: "Manrope";
+}
+
+.cta-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  /* Gallery */
+  .gallery-info {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  /* Video */
+  .video-info {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  /* CTA */
+  .cta .grid.wide {
+    max-width: 470px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  /* Story */
+  .story .info-wrapper {
+    padding-right: 0;
+  }
+
+  /* Gallery */
+  .gallery {
+    padding-top: 100px;
+  }
+
+  /* Video */
+  .video {
+    padding-block: 100px;
+  }
+
+  /* Team */
+  .team .team-lawyers .team-lawyers-item-btn {
+    left: 40px;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .tag,
+  .desc {
+    font-size: 1.4rem;
+  }
+
+  .story-info-desc {
+    margin-bottom: 10px;
+  }
+
+  /* Intro */
+  .intro {
+    padding-bottom: 40px;
+  }
+
+  /* Team */
+  .team .team-lawyers .team-lawyers-item-btn {
+    left: 20px;
+    right: 20px;
+  }
+
+  /* Gallery */
+  .gallery-statistical {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  /* Gallery */
+  .gallery-statistical {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .main {
+    top: 100px;
+  }
+
+  .tag,
+  .desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 37px;
+    margin-bottom: 12.96px;
+  }
+
+  /* Intro */
+  .intro {
+    padding: 0 20px 40px;
+  }
+
+  /* Story */
+  .story {
+    padding: 50px 20px 0;
+  }
+
+  .story-info-desc {
+    margin-bottom: 20px;
+  }
+
+  /* Gallery */
+  .gallery {
+    padding-top: 50px;
+    padding-inline: 20px;
+  }
+
+  .gallery-desc {
+    margin-bottom: 30px;
+  }
+
+  .gallery-dot {
+    margin-bottom: 50px;
+  }
+
+  .gallery-statistical {
+    padding-block: 40px;
+  }
+
+  /* Video  */
+  .video {
+    padding: 50px 20px;
+  }
+
+  .video-desc {
+    margin-bottom: 30px;
+  }
+
+  .video .video-wrapper img {
+    width: 50px;
+  }
+
+  /* Team */
+  .team {
+    padding-inline: 0;
+    padding-top: 40px;
+  }
+
+  /* Awards */
+  .awards {
+    padding: 50px 20px;
+  }
+
+  .awards-tag {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .awards-title {
+    font-size: 3rem;
+    line-height: 37px;
+    margin-bottom: 40px;
+  }
+
+  .awards .row {
+    padding: 30px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 40px 50px;
+  }
+  .cta-tag,
+  .cta-desc {
+    font-size: 1rem;
+    line-height: 17px;
+  }
+
+  .cta-title {
+    font-size: 2.4rem;
+    line-height: 30px;
+  }
+
+  .cta-desc {
+    margin-bottom: 24.43px;
+  }
+
+  .cta-btn {
+    font-size: 10.58px;
+    line-height: 17.63px;
+  }
+}
