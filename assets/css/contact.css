@@ -1,0 +1,152 @@
+.main {
+  background-color: var(--White);
+  padding-top: 100px;
+  position: relative;
+  top: var(--header-height-large);
+}
+
+.main-title {
+  margin-bottom: 18px;
+  color: var(--Dark);
+}
+
+.main-desc {
+  margin-bottom: 38px;
+  color: var(--Dark);
+  margin-bottom: 35px;
+}
+
+.main-form .row {
+  margin-left: -15px;
+}
+
+.main-form .row .col {
+  padding: 15px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-wrapper-title {
+  font-weight: 600;
+  color: var(--Dark);
+  margin-bottom: 12px;
+}
+
+.main-wrapper-input {
+  color: var(--Gray);
+  padding: 20px;
+  border: 1px solid var(--Gray-light);
+}
+
+.main-form select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.main-wrapper .wrapper {
+  position: relative;
+}
+
+.main-wrapper .wrapper select {
+  width: 100%;
+}
+
+.main-wrapper .wrapper img {
+  position: absolute;
+  top: 50%;
+  translate: -50%;
+  right: 20px;
+}
+
+#main-wrapper-message {
+  height: 330px;
+  margin-bottom: 30px;
+}
+
+.main-form-btn {
+  float: right;
+}
+
+.footer {
+  background-color: var(--White);
+}
+
+.footer-top-map {
+  width: 100%;
+}
+
+.footer-bottom-img.white {
+  display: none;
+}
+
+.footer-bottom-logo a .logo-pretitle,
+.footer-bottom-logo a .logo-title {
+  color: var(--Dark);
+}
+
+.footer-bottom-social-item a {
+  background-color: var(--Dark);
+}
+
+@media (min-width: 1200px) {
+  .main-heading {
+    max-width: 670px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+}
+
+@media screen and (max-width: 991.98px) {
+}
+
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 575.98px) {
+  .main {
+    padding: 50px 20px 0;
+    top: var(--header-height-small);
+  }
+
+  #main-wrapper-message {
+    margin-bottom: 0;
+  }
+
+  .main-form-btn {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    margin-top: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--Dark);
+  }
+
+  .footer-top {
+    padding-bottom: 10px;
+  }
+
+  .footer-bottom-img.white {
+    display: block;
+  }
+
+  .footer-bottom-img.black {
+    display: none;
+  }
+
+  .footer-bottom-logo a .logo-pretitle,
+  .footer-bottom-logo a .logo-title {
+    color: var(--White);
+  }
+
+  .footer-bottom-social-item a {
+    background-color: #313d39;
+  }
+}

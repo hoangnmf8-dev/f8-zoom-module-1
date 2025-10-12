@@ -6,7 +6,394 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-7.1.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="contact">
+      <header class="header">
+        <div class="grid wide">
+          <div class="row">
+            <input type="checkbox" id="header-checkbox" hidden />
+            <div class="col l-o-0 m-4 s-4 c-4">
+              <label class="menu-bar" for="header-checkbox">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <label class="header-overlay" for="header-checkbox"></label>
+            <div class="col l-3 l-o-1 m-4 s-0 c-0">
+              <div class="logo">
+                <a href="#">
+                  <img src="./assets/images/Vector.svg" alt="" />
+                  <h2 class="logo-pretitle">Justice</h2>
+                  <h2 class="logo-title">Law Firm</h2>
+                </a>
+              </div>
+            </div>
+
+            <nav class="header-nav">
+              <label class="header-nav-close" for="header-checkbox">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+              <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Home</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >About</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Practice Areas</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                  <ul class="sub-nav">
+                    <li class="item">
+                      <a href="" class="link">Divorce</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Personal Injury</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Employment</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Immigration</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Family</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Property</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Attorneys</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Page</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="col l-3 l-o-3 m-4 s-8 c-8">
+              <div class="header-tel">
+                <span>Call: </span>
+                <a href="tel: (000) 123 456 789">(000) 123 456 789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="grid wide">
+          <div class="main-heading">
+            <div class="main-title heading-2">
+              Contact With Justice Law Firm
+            </div>
+            <p class="main-desc paragraph-1">
+              At The Justice Law Firm, our clients are our top priority. Fueled
+              by passion and determination, we have a reputation for legal
+              excellence in North Carolina. Our firm was established in 1907 and
+              we’ve been delivering best.
+            </p>
+          </div>
+
+          <form class="main-form">
+            <div class="row">
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-first-name"
+                    class="main-wrapper-title paragraph-1"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="main-wrapper-input paragraph-1"
+                    id="main-wrapper-first-name"
+                    name="first-name"
+                    placeholder="Your first name"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-last-name"
+                    class="main-wrapper-title paragraph-1"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="main-wrapper-input paragraph-1"
+                    id="main-wrapper-last-name"
+                    name="last-name"
+                    placeholder="Your last name"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-phone"
+                    class="main-wrapper-title paragraph-1"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    class="main-wrapper-input paragraph-1"
+                    id="main-wrapper-phone"
+                    name="phone"
+                    placeholder="Your phone here"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-email"
+                    class="main-wrapper-title paragraph-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="main-wrapper-input paragraph-1"
+                    id="main-wrapper-email"
+                    name="email"
+                    placeholder="Your email here"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-service"
+                    class="main-wrapper-title paragraph-1"
+                    >Service</label
+                  >
+                  <div class="wrapper">
+                    <select
+                      class="main-wrapper-input paragraph-1"
+                      id="main-wrapper-service"
+                      name="email"
+                      required
+                    >
+                      <option value="Practice Area">Practice Area</option>
+                      <option value="Practice Area">Practice Area</option>
+                      <option value="Practice Area">Practice Area</option>
+                    </select>
+                    <img src="./assets/images/Vector 2.svg" alt="icon-down" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l-6 s-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-lawyer"
+                    class="main-wrapper-title paragraph-1"
+                    >Lawyer</label
+                  >
+                  <div class="wrapper">
+                    <select
+                      class="main-wrapper-input paragraph-1"
+                      id="main-wrapper-lawyer"
+                      name="lawyer"
+                      required
+                    >
+                      <option value="Specific Attorney">
+                        Specific Attorney
+                      </option>
+                      <option value="Specific Attorney">
+                        Specific Attorney
+                      </option>
+                      <option value="Specific Attorney">
+                        Specific Attorney
+                      </option>
+                    </select>
+                    <img src="./assets/images/Vector 2.svg" alt="icon-down" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l-12">
+                <div class="main-wrapper">
+                  <label
+                    for="main-wrapper-message"
+                    class="main-wrapper-title paragraph-1"
+                    >Message</label
+                  >
+                  <textarea
+                    type="text"
+                    class="main-wrapper-input paragraph-1"
+                    id="main-wrapper-message"
+                    name="message"
+                    placeholder="Write your messages"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col l-12">
+                <button class="main-form-btn btn">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col l-0 c-12">
+                <div class="footer-top-info">
+                  <div class="row">
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Justice</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item"><a href="#">Privacy Policy</a></li>
+                          <li class="item">
+                            <a href="#">Terms & Conditions</a>
+                          </li>
+                          <li class="item">
+                            <a href="#">Cookie Preferences</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Pages</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item"><a href="#">Home</a></li>
+                          <li class="item"><a href="#">About</a></li>
+                          <li class="item"><a href="#">Practice Areas</a></li>
+                          <li class="item"><a href="#">Attorneys</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Justice</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item">
+                            <a href="#"
+                              >50 Harrison Street, PH Suite 445 <br> Hoboken, NJ
+                              07030</a
+                            >
+                          </li>
+                          <li class="item">
+                            <a
+                              href="tel: (000) 123-4567
+  "
+                              >(000) 123-4567
+                            </a>
+                          </li>
+                          <li class="item">
+                            <a href="mailto: yourlawfirm22@gmail.com"
+                              >yourlawfirm22@gmail.com</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-12 m-12 footer-top-wrapper">
+                <div class="footer-top-map">
+                  <img
+                    src="./assets/images/footer-map.png"
+                    alt="footer-map"
+                    class="footer-top-img"
+                  />
+                  <button class="footer-top-map-btn">View Large Map</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-logo">
+              <a href="#">
+                <img
+                  class="footer-bottom-img black"
+                  src="./assets/images/Vector.svg"
+                  alt="footer-logo"
+                />
+                <img
+                  class="footer-bottom-img white"
+                  src="./assets/images/Vector-white.svg"
+                  alt="footer-logo"
+                />
+                <h2 class="logo-pretitle">Justice</h2>
+                <h2 class="logo-title">Law Firm</h2>
+              </a>
+            </div>
+            <div class="footer-bottom-info">
+              <p class="footer-bottom-copyright">
+                Copyright © 2022 UI HUT All Rights Reserved
+              </p>
+
+              <ul class="footer-bottom-social">
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

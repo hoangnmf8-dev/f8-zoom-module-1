@@ -1,7 +1,3 @@
-.about {
-  overflow-x: hidden;
-}
-
 .main {
   position: relative;
   top: 127px;
@@ -358,6 +354,7 @@
 .cta-btn {
   display: block;
   margin: 0 auto;
+  max-width: 242px;
 }
 
 @media (min-width: 1200px) {

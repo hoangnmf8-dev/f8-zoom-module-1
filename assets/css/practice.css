@@ -1,7 +1,3 @@
-.practice {
-  overflow-x: hidden;
-}
-
 .main {
   position: relative;
   top: var(--header-height-large);
