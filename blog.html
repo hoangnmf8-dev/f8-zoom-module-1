@@ -6,7 +6,598 @@
     <title>Blog</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-7.1.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="blog">
+      <header class="header">
+        <div class="grid wide">
+          <div class="row">
+            <input type="checkbox" id="header-checkbox" hidden />
+            <div class="col l-o-0 m-4 s-4 c-4">
+              <label class="menu-bar" for="header-checkbox">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <label class="header-overlay" for="header-checkbox"></label>
+            <div class="col l-3 l-o-1 m-4 s-0 c-0">
+              <div class="logo">
+                <a href="#">
+                  <img src="./assets/images/Vector.svg" alt="" />
+                  <h2 class="logo-pretitle">Justice</h2>
+                  <h2 class="logo-title">Law Firm</h2>
+                </a>
+              </div>
+            </div>
+
+            <nav class="header-nav">
+              <label class="header-nav-close" for="header-checkbox">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+              <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Home</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >About</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Practice Areas</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                  <ul class="sub-nav">
+                    <li class="item">
+                      <a href="" class="link">Divorce</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Personal Injury</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Employment</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Immigration</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Family</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                    <li class="item">
+                      <a href="" class="link">Property</a>
+                      <i class="fa-solid fa-chevron-right icon"></i>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Attorneys</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="" target="_blank"
+                    >Page</a
+                  >
+                  <i
+                    class="fa-solid fa-chevron-down header-nav-list-item-icon"
+                  ></i>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="col l-3 l-o-3 m-4 s-8 c-8">
+              <div class="header-tel">
+                <span>Call: </span>
+                <a href="tel: (000) 123 456 789">(000) 123 456 789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="grid wide">
+          <h1 class="main-title heading-1">Justice Law Firm Press Releases</h1>
+          <ul class="main-controls">
+            <li class="main-controls-btn btn active">All</li>
+            <li class="main-controls-btn btn">Recent</li>
+            <li class="main-controls-btn btn">Popular</li>
+            <li class="main-controls-btn btn">Trending</li>
+            <li class="main-controls-btn btn">Oldest</li>
+          </ul>
+
+          <ul class="main-filter">
+            <div class="row">
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-1.png"
+                    alt="main-img-1"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-2.png"
+                    alt="main-img-2"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-3.png"
+                    alt="main-img-3"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-12 s-0">
+                <div class="main-newsletter">
+                  <div class="grid wide">
+                    <div class="row">
+                      <div class="main-newsletter-tag paragraph-1">
+                        #Newsletter
+                      </div>
+                      <h2 class="main-newsletter-title heading-2">
+                        Subscribe Our Newsletter
+                      </h2>
+                      <form class="main-newsletter-wrapper">
+                        <input
+                          class="main-newsletter-wrapper-input paragraph-2"
+                          type="email"
+                          name="email"
+                          placeholder="Enter your email"
+                        />
+                        <button class="main-newsletter-wrapper-btn btn">
+                          Subscribe
+                        </button>
+                      </form>
+                      <p class="main-newsletter-action paragraph-2">
+                        The latest Law News.
+                        <a href="#">Stright to your inbox</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-4.png"
+                    alt="main-img-4"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-0 s-12">
+                <div class="cta">
+                  <div class="grid wide">
+                    <p class="cta-tag">#CTA</p>
+                    <h2 class="cta-title">Dealing With a Issue?</h2>
+                    <p class="cta-desc">
+                      Where every injury is personal. We are a different kind of
+                      law firm. Let our small, passionate group of trial lawyers
+                      fight for your rights!
+                    </p>
+                    <div class="cta-btn btn">Get a Consultations</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-5.png"
+                    alt="main-img-5"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-6.png"
+                    alt="main-img-6"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-7.png"
+                    alt="main-img-7"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img8.png"
+                    alt="main-img-8"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-9.png"
+                    alt="main-img-9"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-10.png"
+                    alt="main-img-10"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-11.png"
+                    alt="main-img-11"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+
+              <div class="col l-4 s-6 c-12">
+                <li class="main-filter-item">
+                  <img
+                    class="main-filter-item-img"
+                    src="./assets/images/blog-page-img/main-img-12.png"
+                    alt="main-img-12"
+                  />
+                  <div class="main-filter-item-heading">
+                    <img
+                      src="./assets/images/Ellipse 11.svg"
+                      class="main-filter-item-heading-img"
+                      alt="ellipse-11"
+                    />
+                    <div class="main-filter-item-heading-info">
+                      <span class="name">Mitchell Starc</span>
+                      <span class="position">Attorney at Law</span>
+                    </div>
+                  </div>
+                  <p class="main-filter-item-desc">
+                    5 Key Rules of Law in Our Society Must Know in 2022
+                  </p>
+                  <a href="#" class="main-filter-item-link">Learn More</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+
+          <ul class="main-pagination">
+            <li class="main-pagination-item paragraph-1 active">1</li>
+            <li class="main-pagination-item paragraph-1">2</li>
+            <li class="main-pagination-item paragraph-1">3</li>
+            <li class="main-pagination-item paragraph-1">4</li>
+            <li class="main-pagination-item paragraph-1">5</li>
+          </ul>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col l-7-2 l-o-6 m-12 s-12 c-12">
+                <div class="footer-top-info">
+                  <div class="row">
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Justice</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item"><a href="#">Privacy Policy</a></li>
+                          <li class="item">
+                            <a href="#">Terms & Conditions</a>
+                          </li>
+                          <li class="item">
+                            <a href="#">Cookie Preferences</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Pages</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item"><a href="#">Home</a></li>
+                          <li class="item"><a href="#">About</a></li>
+                          <li class="item"><a href="#">Practice Areas</a></li>
+                          <li class="item"><a href="#">Attorneys</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col l-4 s-12 c-12">
+                      <div class="footer-top-item">
+                        <h2 class="footer-top-item-title">Justice</h2>
+                        <ul class="footer-top-item-list">
+                          <li class="item">
+                            <a href="#"
+                              >50 Harrison Street, PH Suite 445 Hoboken, NJ
+                              07030</a
+                            >
+                          </li>
+                          <li class="item">
+                            <a
+                              href="tel: (000) 123-4567
+        "
+                              >(000) 123-4567
+                            </a>
+                          </li>
+                          <li class="item">
+                            <a href="mailto: yourlawfirm22@gmail.com"
+                              >yourlawfirm22@gmail.com</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4-8 l-o-6 m-12 s-12 c-12 footer-top-wrapper">
+                <div class="footer-top-map">
+                  <img
+                    src="./assets/images/footer-map.png"
+                    alt="footer-map"
+                    class="footer-top-img"
+                  />
+                  <button class="footer-top-map-btn">View Large Map</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-logo">
+              <a href="#">
+                <img
+                  class="footer-bottom-img"
+                  src="./assets/images/Vector-white.svg"
+                  alt="footer-logo"
+                />
+                <h2 class="logo-pretitle">Justice</h2>
+                <h2 class="logo-title">Law Firm</h2>
+              </a>
+            </div>
+            <div class="footer-bottom-info">
+              <p class="footer-bottom-copyright">
+                Copyright © 2022 UI HUT All Rights Reserved
+              </p>
+
+              <ul class="footer-bottom-social">
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="footer-bottom-social-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

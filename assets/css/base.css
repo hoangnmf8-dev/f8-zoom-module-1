@@ -73,6 +73,34 @@ img {
   display: block;
 }
 
+.heading-1 {
+  color: var(--White);
+  font-size: 6rem;
+  font-family: "Roboto Slab";
+  font-weight: 800;
+  line-height: 70px;
+}
 
+.heading-2 {
+  color: var(--White);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+}
 
+.paragraph-1 {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 30px;
+}
 
+.paragraph-2 {
+  color: var(--White);
+  font-size: 1.6rem;
+  font-family: "Manrope";
+  font-weight: 400;
+  line-height: 28px;
+}
