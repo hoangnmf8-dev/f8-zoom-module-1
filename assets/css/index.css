@@ -1,3 +1,8 @@
+.main {
+  position: relative;
+  top: var(--header-height-large);
+}
+
 /* Intro */
 .intro {
   background-color: var(--Yellow-light);
@@ -1052,7 +1057,7 @@
   /* Main */
   .main {
     position: relative;
-    top: 100px;
+    top: var(--header-height-small);
   }
 
   /* Intro */
