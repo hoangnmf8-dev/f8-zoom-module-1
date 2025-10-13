@@ -53,6 +53,37 @@
   background-color: var(--Yellow);
 }
 
+.intro .intro-media-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+  width: 25%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--Dark);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.intro .intro-media-play:hover {
+  background-color: var(--Orange);
+}
+
+.intro-abstract-img {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  translate: -50%;
+}
+
 .intro .intro-media .intro-media-img {
   display: block;
   position: absolute;
@@ -75,6 +106,15 @@
   aspect-ratio: 1/1;
 }
 
+.about-abstract-img {
+  position: absolute;
+  width: 20%;
+  bottom: 20%;
+  left: 100%;
+  translate: -50%;
+  z-index: 1000;
+}
+
 .about .about-img::before {
   content: "";
   position: absolute;
@@ -85,7 +125,7 @@
   z-index: 1000;
 }
 
-.about .about-img img {
+.about .about-img .img {
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
@@ -137,7 +177,7 @@
   margin-bottom: 53px;
 }
 
-.about .about-info-statistical .about-info-statistical-item {
+.about-info-statistical-item {
   margin-right: 55px;
 }
 
@@ -240,7 +280,15 @@
   position: relative;
 }
 
-.features .features-top-img img {
+.features-abstract-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: -50% -50%;
+  width: 20%;
+}
+
+.features .features-top-img .img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -309,8 +357,8 @@
   justify-content: center;
 }
 
-.features .features-bottom .features-bottom-info-tag,
-.features .features-bottom .features-bottom-info-desc {
+.features-bottom-info-tag,
+.features-bottom-info-desc {
   color: var(--Gray);
   font-size: 1.8rem;
   font-family: "Roboto Slab";
@@ -318,15 +366,15 @@
   line-height: 30px;
 }
 
-.features .features-bottom .features-bottom-info-desc {
+.features-bottom-info-desc {
   margin-bottom: 38px;
 }
 
-.features .features-bottom .features-bottom-info-tag {
+.features-bottom-info-tag {
   margin-bottom: 6px;
 }
 
-.features .features-bottom .features-bottom-info-title {
+.features-bottom-info-title {
   color: var(--Dark);
   font-size: 4.2rem;
   font-family: "Roboto Slab";
@@ -334,15 +382,33 @@
   line-height: 52px;
 }
 
-.features .features-bottom .features-bottom-info-title {
+.features-bottom-info-title {
   margin-bottom: 18px;
 }
 
-.features .features-bottom-img {
+.features-bottom-img {
   position: relative;
 }
 
-.features .features-bottom-img img {
+.features-bottom-abstract-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: -50%;
+  width: 25%;
+}
+
+.features-bottom-img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 40%;
+  background-color: var(--Green);
+}
+
+.features-bottom-img .img {
   aspect-ratio: 1/1;
   width: 100%;
   object-fit: cover;
@@ -382,10 +448,6 @@
   margin-bottom: 70px;
 }
 
-.team .team-lawyers .row {
-  margin-inline: -15px;
-}
-
 .team .team-lawyers .row .col {
   padding: 15px;
 }
@@ -405,15 +467,15 @@
   visibility: visible;
 }
 
-.team .team-lawyers .team-lawyers-item .team-lawyers-item-img img {
+.team-lawyers-item-img img {
   transition: all 0.3s ease;
 }
 
-.team .team-lawyers .team-lawyers-item .team-lawyers-item-img:hover img {
+.team-lawyers-item-img:hover img {
   scale: 1.1;
 }
 
-.team .team-lawyers .team-lawyers-item-btn {
+.team-lawyers-item-btn {
   position: absolute;
   bottom: 30px;
   right: 90px;
@@ -430,7 +492,7 @@
   margin-bottom: 18px;
 }
 
-.team .team-lawyers .team-lawyers-item-name {
+.team-lawyers-item-name {
   color: var(--White);
   font-size: 2.2rem;
   font-family: "Manrope";
@@ -438,7 +500,7 @@
   line-height: 32px;
 }
 
-.team .team-lawyers .team-lawyers-item-position {
+.team-lawyers-item-position {
   color: var(--Gray-light);
   font-size: 1.6rem;
   font-family: "Manrope";
@@ -963,30 +1025,30 @@
     padding-top: 100px;
   }
 
-  .features .features-top-info .features-top-title {
+  .features-top-title {
     font-size: 3rem;
   }
 
-  .features .features-top-info .features-top-tag,
-  .features .features-top-info .features-top-desc {
+  .features-top-tag,
+  .features-top-desc {
     font-size: 1.4rem;
   }
 
-  .features .features-bottom-info .features-bottom-info-title {
+  .features-bottom-info-title {
     font-size: 3rem;
   }
 
-  .features .features-bottom-info .features-bottom-info-tag,
-  .features .features-bottom-info .features-bottom-info-desc {
+  .features-bottom-info-tag,
+  .features-bottom-info-desc {
     font-size: 1.4rem;
   }
 
-  .features .features-bottom-info .features-bottom-info-desc {
+  .features-bottom-info-desc {
     margin-bottom: 20px;
   }
 
   /* Team */
-  .team .team-lawyers .team-lawyers-item-btn {
+  .team-lawyers-item-btn {
     left: 20px;
     right: 20px;
   }
