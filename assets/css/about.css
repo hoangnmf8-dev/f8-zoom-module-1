@@ -1,6 +1,7 @@
 .main {
   position: relative;
   top: 127px;
+  overscroll-behavior: none;
 }
 
 .tag,
@@ -180,7 +181,7 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 1000;
-  transition: scale 0.1s ease;
+  transition: all 0.1s ease;
   background-color: var(--White);
   display: flex;
   align-items: center;
@@ -188,8 +189,12 @@
   font-size: 3rem;
 }
 
-.video .video-wrapper .video-wrapper-icon:active {
-  scale: 0.8;
+.video .video-wrapper .video-wrapper-icon:hover {
+  background-color: var(--Orange);
+}
+
+.video .video-wrapper .video-wrapper-icon:hover i {
+  color: var(--White);
 }
 
 .video .video-wrapper video {

@@ -1,6 +1,6 @@
 <!-- Yêu cầu chung -->
 <!-- Tạo repo tên: f8-zoom-module-1 --> OK -->
-Cấu trúc HTML chuẩn, dùng thẻ semantic (Check với W3C Markup Validation không được có lỗi hoặc cảnh báo).
+<!-- Cấu trúc HTML chuẩn, dùng thẻ semantic (Check với W3C Markup Validation không được có lỗi hoặc cảnh báo). --> OK -->
 
 <!-- CSS dùng rem, đặt biến màu sắc, font chữ chuẩn thiết kế, áp dụng thêm transition phù hợp. --> OK -->
 
@@ -22,9 +22,9 @@ Cấu trúc HTML chuẩn, dùng thẻ semantic (Check với W3C Markup Validatio
 
 <!-- Không để lại file trống hoặc file chưa hoàn thiện trong dự án. -->OK -->
 
-Các đoạn mã CSS/HTML phải được format gọn gàng, dễ đọc.
+<!-- Các đoạn mã CSS/HTML phải được format gọn gàng, dễ đọc. --> OK -->
 
-Trước khi nộp, hãy kiểm tra lại xem giao diện đã giống thiết kế chưa, đã responsive đủ chưa.
+<!-- Trước khi nộp, hãy kiểm tra lại xem giao diện đã giống thiết kế chưa, đã responsive đủ chưa. --> OK -->
 
 <!-- Checklist trước khi nộp bài -->
 
@@ -34,20 +34,20 @@ Trước khi nộp, hãy kiểm tra lại xem giao diện đã giống thiết k
 
 <!-- Đã chia folder đúng cấu trúc (assets/css, assets/images, …). --> OK  -->
 
-Không có lỗi hoặc warning khi kiểm tra với W3C.
+<!-- Không có lỗi hoặc warning khi kiểm tra với W3C. --> OK -->
 
 <!-- Đã nén ảnh trước khi đưa vào project. --> OK -->
 
-Giao diện hiển thị đúng thiết kế.
+<!-- Giao diện hiển thị đúng thiết kế. --> OK -->
 
-Responsive tốt trên Desktop, Tablet, Mobile.
+<!-- Responsive tốt trên Desktop, Tablet, Mobile. --> OK -->
 
 <!-- Không dùng ảnh từ link ngoài. --> OK -->
 
 <!-- Không để lại file trống, file thừa hoặc chưa dùng. --> OK -->
 
-Mã nguồn rõ ràng, dễ đọc, được format hợp lý.
+Mã nguồn rõ ràng, dễ đọc, được format hợp lý. 
 
-Push code đầy đủ lên Github.
+<!-- Push code đầy đủ lên Github. --> OK -->
 
-Deploy thành công với Github Pages.
+<!-- Deploy thành công với Github Pages. --> OK -->
