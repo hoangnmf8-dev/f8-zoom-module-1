@@ -117,6 +117,10 @@
     margin-bottom: 0;
   }
 
+  .main-form .row {
+    margin-inline: -15px;
+  }
+
   .main-form-btn {
     display: block;
     margin: 0 auto;

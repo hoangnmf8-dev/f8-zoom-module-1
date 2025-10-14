@@ -184,7 +184,7 @@
   background-color: var(--White);
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   font-size: 3rem;
 }
 
@@ -535,6 +535,14 @@
   .team {
     padding-inline: 0;
     padding-top: 40px;
+  }
+
+  .team .team-lawyers .row {
+    margin-inline: 0;
+  }
+
+  .team .team-lawyers .row .col {
+    padding: 15px 0;
   }
 
   /* Awards */

@@ -48,6 +48,10 @@ body {
   line-height: 1.5;
 }
 
+body:has(.input-overlay:checked) {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }

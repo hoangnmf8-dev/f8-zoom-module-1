@@ -97,6 +97,56 @@
   letter-spacing: 0.2rem;
 }
 
+.intro-media-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--Overlay);
+  z-index: 2000;
+  display: none;
+}
+
+.intro-media-video-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 50%;
+  z-index: 2100;
+  display: none;
+}
+
+.intro-media-video {
+  width: 100%;
+}
+
+.intro-media-video-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 5%;
+  aspect-ratio: 1/1;
+  background-color: var(--Dark);
+  z-index: 2200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.intro-media-video-close:hover {
+  background-color: var(--Orange);
+}
+
+.intro-media-video-close i {
+  color: var(--White);
+}
+
+#intro-media-checked-video:checked + .intro-media-overlay,
+#intro-media-checked-video:checked ~ .intro-media-video-wrapper {
+  display: block;
+}
+
 .intro-abstract-img {
   position: absolute;
   width: 30%;
@@ -377,6 +427,10 @@
 .features-bottom .info-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.features-bottom-info {
+  padding-right: 100px;
 }
 
 .features-bottom-info-tag,
@@ -734,6 +788,7 @@
 
 .faq-questions-wrapper-item {
   padding: 30px;
+  cursor: pointer;
 }
 
 .faq-questions-wrapper-item:hover {
@@ -764,9 +819,12 @@
   color: var(--White);
   font-size: 1.6rem;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.faq-questions-wrapper-item:hover .icon {
+#faq-check-description-first:checked ~ .heading .icon,
+#faq-check-description-second:checked ~ .heading .icon,
+#faq-check-description-third:checked ~ .heading .icon {
   background-color: var(--Orange);
 }
 
@@ -774,7 +832,9 @@
   transition: rotate 0.3s ease;
 }
 
-.faq-questions-wrapper-item:hover .icon i {
+#faq-check-description-first:checked ~ .heading .icon i,
+#faq-check-description-second:checked ~ .heading .icon i,
+#faq-check-description-third:checked ~ .heading .icon i {
   rotate: 180deg;
 }
 
@@ -790,7 +850,9 @@
   margin-top: 18px;
 }
 
-.faq-questions-wrapper-item:hover .description {
+#faq-check-description-first:checked ~ .description,
+#faq-check-description-second:checked ~ .description,
+#faq-check-description-third:checked ~ .description {
   max-height: 150px;
 }
 
