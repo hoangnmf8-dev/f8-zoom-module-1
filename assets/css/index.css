@@ -10,7 +10,7 @@
   padding-block: 135px;
 }
 
-.intro .intro-info .intro-info-address {
+.intro-info-address {
   font-size: 1.8rem;
   font-family: "Roboto Slab";
   font-weight: 400;
@@ -18,7 +18,7 @@
   margin-bottom: 12px;
 }
 
-.intro .intro-info .intro-info-title {
+.intro-info-title {
   font-size: 6rem;
   font-family: "Roboto Slab";
   font-weight: 800;
@@ -26,7 +26,7 @@
   margin-bottom: 18px;
 }
 
-.intro .intro-info .intro-info-desc {
+.intro-info-desc {
   font-size: 1.8rem;
   font-family: "Manrope";
   font-weight: 400;
@@ -244,7 +244,7 @@
   margin-bottom: 28px;
 }
 
-.about .about-info-statistical {
+.about-info-statistical {
   display: flex;
   margin-bottom: 53px;
 }
@@ -376,12 +376,12 @@
   background-color: var(--Orange);
 }
 
-.features .features-top-info {
+.features-top-info {
   padding-left: 130px;
 }
 
-.features .features-top-info .features-top-tag,
-.features .features-top-info .features-top-desc {
+.features-top-tag,
+.features-top-desc {
   color: var(--Gray);
   font-size: 1.8rem;
   font-family: "Roboto Slab";
@@ -389,15 +389,15 @@
   line-height: 30px;
 }
 
-.features .features-top-info .features-top-desc {
+.features-top-desc {
   margin-bottom: 28px;
 }
 
-.features .features-top-info .features-top-tag {
+.features-top-tag {
   margin-bottom: 6px;
 }
 
-.features .features-top-info .features-top-title {
+.features-top-title {
   color: var(--Dark);
   font-size: 4.2rem;
   font-family: "Roboto Slab";
@@ -406,13 +406,13 @@
   margin-bottom: 18px;
 }
 
-.features .features-top-info .features-top-list {
+.features-top-list {
   list-style-type: disc;
   list-style-position: inside;
   margin-left: 10px;
 }
 
-.features .features-top-info .features-top-list .features-top-list-item {
+.features-top-list-item {
   color: var(--Dark);
   font-size: 1.8rem;
   font-family: "Manrope";
@@ -584,6 +584,10 @@
   line-height: 28px;
 }
 
+.team-lawyers-btn {
+  margin: 40px auto 0;;
+}
+
 /* Awards */
 .awards {
   padding-block: 100px;
@@ -591,7 +595,7 @@
   text-align: center;
 }
 
-.awards .awards-tag {
+ .awards-tag {
   color: var(--Dark);
   font-size: 1.8rem;
   font-family: "Roboto Slab";
@@ -599,7 +603,7 @@
   line-height: 30px;
 }
 
-.awards .awards-title {
+ .awards-title {
   color: var(--Dark);
   font-size: 4.2rem;
   font-family: "Roboto Slab";
@@ -624,7 +628,7 @@
   align-items: center;
 }
 
-.awards .awards-item img {
+.awards-item img {
   width: 40%;
 }
 
@@ -1052,7 +1056,7 @@
     height: 100%;
   }
 
-  .intro .intro-info .intro-info-title {
+  .intro-info-title {
     font-size: 4rem;
     line-height: inherit;
   }
@@ -1077,7 +1081,7 @@
   }
 
   /* Team */
-  .team .team-lawyers .team-lawyers-item-btn {
+  .team-lawyers-item-btn {
     left: 40px;
     right: 40px;
   }
@@ -1235,6 +1239,7 @@
 
   /* Intro */
   .intro {
+    padding-block: 0 30px;
     padding-inline: 20px;
   }
 
@@ -1316,7 +1321,7 @@
 
   /* Service */
   .service {
-    padding: 50px 20px;
+    padding: 50px 20px 0;
   }
 
   .service .service-tag {
@@ -1344,10 +1349,38 @@
     line-height: 28.97px;
   }
 
+  .service-viewall {
+    margin-top: 25px;
+  }
+
   /* Features */
   .features {
-    padding-top: 50px;
+    padding-block: 50px;
     padding-inline: 20px;
+  }
+
+  .features-top-tag,
+  .features-bottom-info-tag {
+    margin-bottom: 5px;
+  }
+
+  .features-top-title,
+  .features-bottom-info-title {
+    line-height: 37px;
+    margin-bottom: 15px;
+  }
+
+  .features-top-desc,
+  .features-bottom-info-desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  
+  .features-top-list-item {
+    font-size: 1.2rem;
+    line-height: 21px;
+    margin-bottom: 9px;
   }
 
   /* Team */
@@ -1358,6 +1391,32 @@
 
   .team .team-lawyers .row .col {
     padding: 15px 0;
+  }
+
+  .team .team-tag,
+  .team .team-desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .team .team-title {
+    font-size: 3rem;
+    line-height: 37px;
+  }
+
+  .team .team-desc {
+    margin-bottom: 25px;
+  }
+
+  .team-lawyers-item-btn {
+    width: 50%;
+    left: 50%;
+    right: auto;
+    translate: -50%;
+  }
+
+  .team-lawyers-item-name {
+    margin-top: 18px;
   }
 
   /* Awards */
@@ -1377,13 +1436,17 @@
   }
 
   .awards .row {
-    padding: 30px;
+    padding: 0 30px 30px;
   }
 
   /* Testimonial */
   .testimonial {
     padding-top: 50px;
     padding-inline: 20px;
+  }
+
+  .testimonial .row {
+    margin-bottom: 25px;
   }
 
   .testimonial-controls {
@@ -1398,6 +1461,7 @@
   .testimonial-title {
     font-size: 3rem;
     line-height: 37px;
+    margin-bottom: 25px;
   }
 
   .testimonial-item-desc {
@@ -1417,8 +1481,17 @@
 
   /* FAQ */
   .faq {
-    padding-top: 50px;
+    padding-block: 50px 0;
     padding-inline: 20px;
+  }
+
+  .faq-questions {
+    margin-bottom: 25px;
+  }
+
+  .faq-questions-item {
+    font-size: 1rem;
+    line-height: 17px;
   }
 
   .faq-tag,
@@ -1455,7 +1528,7 @@
 
   /* Blog */
   .blog {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-inline: 20px;
   }
 

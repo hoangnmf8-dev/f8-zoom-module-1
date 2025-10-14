@@ -235,10 +235,6 @@
   margin-bottom: 70px;
 }
 
-.team .team-lawyers .row {
-  margin-inline: -15px;
-}
-
 .team .team-lawyers .row .col {
   padding: 15px;
 }
@@ -258,15 +254,15 @@
   visibility: visible;
 }
 
-.team .team-lawyers .team-lawyers-item .team-lawyers-item-img img {
+.team-lawyers-item-img img {
   transition: all 0.3s ease;
 }
 
-.team .team-lawyers .team-lawyers-item .team-lawyers-item-img:hover img {
+.team-lawyers-item-img:hover img {
   scale: 1.1;
 }
 
-.team .team-lawyers .team-lawyers-item-btn {
+.team-lawyers-item-btn {
   position: absolute;
   bottom: 30px;
   right: 90px;
@@ -283,7 +279,7 @@
   margin-bottom: 18px;
 }
 
-.team .team-lawyers .team-lawyers-item-name {
+.team-lawyers-item-name {
   color: var(--White);
   font-size: 2.2rem;
   font-family: "Manrope";
@@ -291,12 +287,16 @@
   line-height: 32px;
 }
 
-.team .team-lawyers .team-lawyers-item-position {
+.team-lawyers-item-position {
   color: var(--Gray-light);
   font-size: 1.6rem;
   font-family: "Manrope";
   font-weight: 400;
   line-height: 28px;
+}
+
+.team-lawyers-btn {
+  margin: 40px auto 0;;
 }
 
 /* Awards */
@@ -424,7 +424,7 @@
   }
 
   /* Team */
-  .team .team-lawyers .team-lawyers-item-btn {
+  .team-lawyers-item-btn {
     left: 40px;
     right: 40px;
   }
@@ -456,7 +456,7 @@
   }
 
   /* Team */
-  .team .team-lawyers .team-lawyers-item-btn {
+  .team-lawyers-item-btn {
     left: 20px;
     right: 20px;
   }
@@ -468,6 +468,10 @@
 }
 
 @media screen and (max-width: 767.98px) {
+  /* Story */
+  .story {
+    padding-top: 100px;
+  }
   /* Gallery */
   .gallery-statistical {
     flex-direction: column;
@@ -542,12 +546,34 @@
     padding-top: 40px;
   }
 
-  .team .team-lawyers .row {
-    margin-inline: 0;
-  }
-
   .team .team-lawyers .row .col {
     padding: 15px 0;
+  }
+
+  .team .team-tag,
+  .team .team-desc {
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .team .team-title {
+    font-size: 3rem;
+    line-height: 37px;
+  }
+
+  .team .team-desc {
+    margin-bottom: 25px;
+  }
+
+  .team-lawyers-item-btn {
+    width: 50%;
+    left: 50%;
+    right: auto;
+    translate: -50%;
+  }
+
+  .team-lawyers-item-name {
+    margin-top: 18px;
   }
 
   /* Awards */
