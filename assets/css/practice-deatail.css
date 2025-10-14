@@ -1,0 +1,161 @@
+.main {
+  position: relative;
+  top: var(--header-height-large);
+  background-color: var(--White);
+}
+
+.main-info {
+  padding-bottom: 150px;
+}
+
+.main-img {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.main-arc {
+  margin-bottom: 48px;
+}
+
+.main-arc-title {
+  margin-bottom: 18px;
+  color: var(--Dark);
+}
+
+.main-arc-desc {
+  margin-bottom: 30px;
+  color: var(--Gray);
+}
+
+.main .main-arc:last-child,
+.main .main-arc .main-arc-desc:last-child {
+  margin-bottom: 0;
+} 
+
+.main-arc-list {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 16px;
+  margin-bottom: 30px;
+}
+
+.main-arc-list-item {
+  color: var(--Dark);
+  font-weight: 500;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--Green);
+  padding-block: 100px;
+  text-align: center;
+}
+
+.cta-tag,
+.cta-desc {
+  color: var(--White);
+  font-size: 1.8rem;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+.cta-title {
+  color: var(--White);
+  font-size: 4.2rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+.cta-desc {
+  margin-bottom: 38px;
+  font-family: "Manrope";
+}
+
+.cta-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 242px;
+}
+
+@media (min-width: 1200px) {
+  .main-info {
+    max-width: 770px;
+    margin-inline: auto;
+  }
+
+  /* CTA */
+  .cta .grid.wide {
+    max-width: 470px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+}
+
+@media screen and (max-width: 991.98px) {
+}
+
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 575.98px) {
+  .main {
+    top: var(--header-height-small);
+    padding-top: 40px;
+    padding-inline: 20px;
+  }
+
+  .main-img {
+    margin-bottom: 23px;
+  }
+
+  .main-info {
+    padding-bottom: 50px;
+  }
+
+  .main-arc-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    line-height: 22px;
+  }
+
+  .main-arc-desc {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 21px;
+  }
+
+  .main-arc-list-item {
+    font-size: 1.2rem;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 40px 50px;
+    margin-inline: -20px;
+  }
+  
+  .cta-tag,
+  .cta-desc {
+    font-size: 1rem;
+    line-height: 17px;
+  }
+
+  .cta-title {
+    font-size: 2.4rem;
+    line-height: 30px;
+  }
+
+  .cta-desc {
+    margin-bottom: 24.43px;
+  }
+
+  .cta-btn {
+    font-size: 10.58px;
+    line-height: 17.63px;
+  }
+}
