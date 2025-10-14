@@ -72,7 +72,7 @@
   display: none;
 }
 
-.header-nav .header-nav-list {
+.header-nav-list {
   display: flex;
   font-family: "Manrope";
   gap: 50px;
@@ -81,6 +81,9 @@
 .header-nav-list-item {
   position: relative;
   cursor: pointer;
+}
+
+.header-nav-list-item .item-wrapper {
   display: flex;
   align-items: center;
 }
@@ -113,6 +116,12 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease;
+}
+
+.header-nav-list-item.page .sub-nav {
+  right: 0;
+  left: auto;
+  translate: 0;
 }
 
 .header-nav-list-item:before {
@@ -178,13 +187,16 @@
 }
 
 @media screen and (max-width: 1199.98px) {
+  .header-nav-list {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
   .header .logo {
     justify-content: center;
   }
-  
+
   .header .header-tel {
     display: flex;
     justify-content: flex-end;
@@ -221,10 +233,11 @@
     margin-bottom: 20px;
   }
 
-  .header .header-nav .header-nav-list-item {
+  .header-nav-list-item {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #e3dfdf;
+    flex-direction: column;
   }
 
   .header-nav-list-item-link {
@@ -235,8 +248,26 @@
     translate: 0;
   }
 
-  .header .header-nav .header-nav-list {
-    flex-direction: column;
+  .header-nav-list {
+    display: block;
+  }
+
+  .header-nav-list-item::before {
+    display: none;
+  }
+
+  .header-nav-list-item .sub-nav {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    translate: 0;
+    max-height: 0;
+    transition: all 0.2s ease;
+  }
+
+  .header-nav-list-item:hover .sub-nav {
+    max-height: 315px;
+    visibility: visible;
   }
 
   .header-tel span {

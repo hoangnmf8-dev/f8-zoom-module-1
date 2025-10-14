@@ -69,19 +69,41 @@
   color: var(--White);
   font-size: 2.4rem;
   cursor: pointer;
-  transition: background-color .2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .intro .intro-media-play:hover {
   background-color: var(--Orange);
 }
 
-.intro-abstract-img {
-  width: 30%;
+.intro-media-play .circle-text {
+  fill: var(--Dark);
+  height: auto;
+  max-width: 300px;
+  transform-origin: center;
+  width: 200%;
   position: absolute;
+  rotate: 8deg;
+  transition: fill 0.2s ease;
+}
+
+.intro .intro-media-play:hover .circle-text {
+  fill: var(--Orange);
+}
+
+.intro-media-play .circle-text textPath {
+  font-family: "Roboto Slab";
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.intro-abstract-img {
+  position: absolute;
+  width: 30%;
   top: 20%;
   left: 100%;
   translate: -50%;
+  z-index: 1000;
 }
 
 .intro .intro-media .intro-media-img {
@@ -938,6 +960,15 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .intro-abstract-img,
+  .about-abstract-img,
+  .features-abstract-img,
+  .features-bottom-abstract-img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   /* Main */
   .main {
@@ -947,7 +978,7 @@
 
   /* Intro */
   .intro {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   .intro .media-wrapper {
@@ -993,7 +1024,7 @@
 @media screen and (max-width: 991.98px) {
   /* Intro */
   .intro-info {
-    margin-bottom: 76px;
+    margin-bottom: 150px;
   }
 
   .intro .media-wrapper {
@@ -1116,6 +1147,20 @@
 }
 
 @media screen and (max-width: 575.98px) {
+  .intro-abstract-img,
+  .about-abstract-img,
+  .features-abstract-img,
+  .features-bottom-abstract-img {
+    display: block;
+  }
+
+  .intro-media,
+  .features-top-img,
+  .features-bottom-img {
+    width: 90%;
+    float: right;
+  }
+
   /* Main */
   .main {
     position: relative;
@@ -1127,14 +1172,18 @@
     padding-inline: 20px;
   }
 
-  .intro .intro-info .intro-info-address,
-  .intro .intro-info .intro-info-desc {
+  .intro-info {
+    margin-bottom: 100px;
+  }
+
+  .intro-info-address,
+  .intro-info-desc {
     font-size: 1rem;
     line-height: 17px;
     margin-bottom: 10px;
   }
 
-  .intro .intro-info .intro-info-title {
+  .intro-info-title {
     font-size: 3.5rem;
     line-height: 41px;
     margin-bottom: 10px;
@@ -1235,6 +1284,10 @@
   .team {
     padding-inline: 0;
     padding-top: 40px;
+  }
+
+  .team .team-lawyers .row .col {
+    padding: 15px 0;
   }
 
   /* Awards */

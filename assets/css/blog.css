@@ -164,6 +164,7 @@
   background-color: var(--Green);
   padding-block: 100px;
   text-align: center;
+  display: none;
 }
 
 .cta-tag,
@@ -205,6 +206,14 @@
 
 }
 @media screen and (max-width: 767.98px) { 
+  .main-newsletter {
+    display: none;
+  }
+
+  .cta {
+    display: block;
+  }
+
   .cta-btn {
     max-width: 242px;
   }
@@ -238,6 +247,7 @@
   /* CTA */
   .cta {
     padding: 40px 50px;
+    margin-inline: -20px;
   }
   .cta-tag,
   .cta-desc {
