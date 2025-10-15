@@ -170,6 +170,11 @@
   justify-content: flex-end;
 }
 
+.header-tel:hover a {
+  text-decoration: underline;
+  color: var(--Orange);
+}
+
 .header-tel span {
   color: var(--Dark);
   font-size: 1.6rem;
