@@ -111,6 +111,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.main-pagination-item:hover {
+  background-color: var(--Orange);
 }
 
 .main-pagination-item.active {

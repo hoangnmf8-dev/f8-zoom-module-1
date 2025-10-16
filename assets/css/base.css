@@ -46,6 +46,7 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.5;
+  overscroll-behavior: none;
 }
 
 body:has(.input-overlay:checked) {
