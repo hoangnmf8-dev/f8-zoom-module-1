@@ -128,6 +128,11 @@
   margin-bottom: 70px;
 }
 
+.gallery-dot img {
+  width: 8%;
+  cursor: pointer;
+}
+
 .gallery-statistical {
   background-color: var(--Yellow);
   display: flex;

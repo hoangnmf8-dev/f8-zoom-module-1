@@ -227,16 +227,20 @@
     background-color: var(--White);
     translate: -100%;
     transition: translate 0.3s ease;
+    display: flex;
+    flex-direction: column;
   }
 
   .header .header-nav .header-nav-close {
     display: inline-block;
+    align-self: flex-end;
     font-size: 1.8rem;
     padding: 2px 10px;
     background-color: var(--Dark);
     color: var(--White);
     border-radius: 4px;
     margin-bottom: 20px;
+ 
   }
 
   .header-nav-list-item {
@@ -298,7 +302,4 @@
     display: none;
   }
 
-  .header .header-nav {
-    width: 100%;
-  }
 }

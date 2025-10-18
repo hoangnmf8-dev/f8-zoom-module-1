@@ -338,6 +338,10 @@
   color: var(--White);
 }
 
+.team-lawyers-item-img:hover img {
+  scale: 1.1;
+}
+
 .service-viewall {
   margin-top: 40px;
   display: inline-block;
@@ -683,7 +687,7 @@
 
 .testimonial-controls-item.disabled {
   background-color: var(--Dark);
-  cursor:no-drop;
+  cursor: no-drop;
 }
 
 .testimonial-controls-item i {
@@ -705,7 +709,7 @@
   padding: 30px;
 }
 
-.testimonial-item.active {
+.testimonial-item:hover {
   box-shadow: 0px 20px 70px rgba(14, 20, 18, 0.07);
 }
 
@@ -1269,9 +1273,9 @@
   }
 
   .intro .intro-info .intro-btn {
-    font-size: 10.58px;
+    font-size: 1.2rem;
     line-height: 17.63px;
-    padding: 8.82px 20.6px;
+    width: 100%;
   }
 
   .intro-media-video-close {
@@ -1324,7 +1328,9 @@
   }
 
   .about .about-info .about-btn {
-    padding: 10.5px 24.6px;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 
   /* Service */
@@ -1355,6 +1361,11 @@
   .service .service-item .service-item-btn {
     font-size: 1.9rem;
     line-height: 28.97px;
+  }
+
+  .service .service-item .service-item-btn:hover {
+    background-color: var(--White);
+    color: var(--Dark);
   }
 
   .service-viewall {
@@ -1416,11 +1427,17 @@
     margin-bottom: 25px;
   }
 
+  .team-lawyers-item-img:hover img {
+    scale: 1;
+  }
+
   .team-lawyers-item-btn {
     width: 50%;
     left: 50%;
     right: auto;
     translate: -50%;
+    opacity: 1;
+    visibility: visible;
   }
 
   .team-lawyers-item-name {
@@ -1498,7 +1515,7 @@
   }
 
   .faq-questions-item {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 17px;
   }
 
@@ -1554,7 +1571,9 @@
     font-size: 3rem;
     line-height: 37px;
   }
-
+  .blog-item-link {
+    color: var(--Orange);
+  }
   /* CTA */
   .cta {
     padding: 40px 50px;

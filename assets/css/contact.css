@@ -88,6 +88,10 @@
   color: var(--Dark);
 }
 
+.footer-bottom-copyright {
+  color: var(--Gray)
+}
+
 .footer-bottom-social-item a {
   background-color: var(--Dark);
 }
@@ -149,6 +153,10 @@
   .footer-bottom-logo a .logo-title {
     color: var(--White);
   }
+
+  .footer-bottom-copyright {
+  color: var(--Gray-light)
+}
 
   .footer-bottom-social-item a {
     background-color: #313d39;
